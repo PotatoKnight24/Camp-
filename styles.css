@@ -3,6 +3,7 @@ body {
     overflow: hidden;
     background-color: black;
     caret-color: transparent;
+    font-family: 'Arial', sans-serif;
 }
 
 #game-container {
@@ -25,8 +26,8 @@ body {
 
 .game-piece {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 50px; /* Increased size for better visibility */
+    height: 50px; /* Increased size for better visibility */
     border-radius: 50%;
     cursor: grab;
     display: flex;
@@ -36,7 +37,9 @@ body {
     color: white;
     z-index: 10; /* Ensure pieces are above the board */
     transform-origin: center;
-    border: 4px solid black; /* Corrected typo */
+    border: 4px solid black;
+    font-size: 24px; /* Increased font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow */
 }
 
 .game-piece:active {

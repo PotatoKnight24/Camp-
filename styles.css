@@ -1,7 +1,8 @@
 body {
     margin: 0;
     overflow: hidden;
-    background-color: black;
+    background: url('your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
     caret-color: transparent;
     font-family: 'Arial', sans-serif;
 }
@@ -14,6 +15,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #game-board {
@@ -22,6 +27,7 @@ body {
     pointer-events: none;
     user-select: none;
     transform-origin: top left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .game-piece {
@@ -40,8 +46,11 @@ body {
     border: 4px solid black;
     font-size: 24px; /* Increased font size */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow */
+    background: linear-gradient(145deg, #ff7e5f, #feb47b); /* Gradient background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .game-piece:active {
     cursor: grabbing;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect when dragging */
 }
